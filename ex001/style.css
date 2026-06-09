@@ -1,0 +1,26 @@
+h1 {
+    color: rgb(240, 206, 18);
+}
+
+p{
+    color: rgb(122, 23, 122);
+}
+#imagem1{
+    width: 200px;
+}
+#imagem2{
+    width: 236px;
+}
+
+a{
+    background-color: dodgerblue; /* cor fundo */
+    color: white; /* cor do texto */
+    padding: 5px; /* para aumentar as bordas */
+    text-decoration: none;/* para retirar a linha embaixo da palavra */
+    border-radius: 10px;/* para colocar bordas arredondadas */
+}
+a:hover { /* estilizar quando ele passa o mouse por cima do botão sem clicar */
+ background-color: chartreuse;
+ color:red;
+ outline: 1px solid red; /* é uma borda de canto da forma */
+}
