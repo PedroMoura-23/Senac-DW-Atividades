@@ -1,0 +1,23 @@
+h1{
+    border: 1px solid black;
+    height: 100px;
+}
+p{
+    border: 1px solid black;
+}
+a{
+    border: 1px solid black;
+    display: inline-block;
+    width: 100px;
+    text-decoration: none;
+    /* padding: 5px 10px 2px 50px;na ordem, superior, direita, inferior, esquerda */
+    /* margin: 10px; */
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    color: crimson;
+}
+a:hover{
+    background-color: black;
+    color: white;
+}

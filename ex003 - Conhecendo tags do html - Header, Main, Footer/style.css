@@ -1,0 +1,16 @@
+header{
+    height: 40px;
+    background-color: navajowhite;
+    position: relative;
+    height: 32px;
+    top: 0;
+
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+main{
+    height: 100vh;
+    position: relative;
+}
