@@ -1,0 +1,155 @@
+body{
+    background-color: rgb(243, 243, 243);
+}
+* {
+    padding: 0;
+    margin: 5px;
+    box-sizing: border-box;
+}
+label[for="btmenu"] {
+    display: none;
+    height: 50px;
+    flex: 1;
+    background-color: var(--bgMenu);
+    cursor: pointer;
+    justify-content: center;/* alinha um na horizontal */
+    align-items: center; /* alinha na vertical, MAS, se a gente mudar o ele para colum, os dois invertem seus valores */
+    line-height: 50px;
+    color: var(--font);
+}
+header{
+    background-color: white;
+}
+h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin: 25px;
+    margin-left: 0;
+    padding-top: 20px;
+}
+#ttpg{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#area1{
+    min-height: 50px;
+}
+#area2{
+    min-height: 100px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+#img{
+    margin-left: 25px;
+}
+#subtt{
+    text-align: center;
+    margin-bottom: 50px;
+}
+:root{
+    --font: white;
+    --bgMenu: rgb(22, 22, 22);
+    --bgbody: rgb(153, 153, 153);
+    --btnhover: silver;
+}
+section{
+    background-color: white;
+    min-height: 200px;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+nav{
+    display: flex;
+    flex-direction:row;
+}
+nav a{
+    text-decoration: none;
+    background-color: var(--bgMenu);
+    color: var(--font);
+    padding: 16px;
+    min-width: 120px;
+    text-align: center;
+    border: 1px solid var(--btnhover);
+    flex: 1;
+}
+nav a:hover{
+    background-color: var(--btnhover);
+}
+#cinza{
+    display: flex;
+    margin-right: 25px;
+    height: 100px;
+       
+    background-color: var(--bgbody);
+
+}
+
+#ctt{
+    padding-bottom: 15px;
+}
+.row1{
+    display: flex;
+}
+.row2{
+    display: flex;
+    background-color: white;
+}
+.col25{
+    width: 25%;
+    background-color: white;
+}
+.col75{
+    width: 75%;
+    background-color: white;
+}
+.coluna1{
+    width: 80%;
+}
+.coluna2{
+    width: 20%;
+}
+input[type='text'], input[type='email'], textarea{
+    border-radius: 4px;
+    border: 1px solid var(--bgMenu);
+    width: 100%;
+}
+#rodape{
+    height: 15px;
+    text-align: center;
+}
+#ass{
+    padding-top: 15px;
+}
+#nome1{
+    height: 0;
+}
+@media(max-width: 1200px){
+    label[for="btmenu"] {
+        display: flex;
+    }
+    nav {
+        display: none;
+    }
+    nav {
+        flex-direction: column;
+    }
+.active{
+    display: flex;
+}
+.row1, .row2{
+    flex-direction: column;
+}
+.col25, .col75{
+    width: 100%;
+}
+.coluna1, .coluna2{
+    width: 100%;
+}    
+}

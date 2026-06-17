@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.claro {
+    --font: rgb(150, 132, 32);
+    --bgMenu: gray;
+    --bgbody: rgb(24, 60, 139);
+    --btnhover: rgb(255, 0, 0);
+}
+.escuro {
+    --font: white;
+    --bgMenu: gray;
+    --bgbody: gold;
+    --btnhover: silver;
+}
+
+label[for="btmenu"] {
+    display: none;
+    height: 50px;
+    flex: 1;
+    background-color: var(--bgMenu);
+    cursor: pointer;
+    justify-content: center;/* alinha um na horizontal */
+    align-items: center; /* alinha na vertical, MAS, se a gente mudar o ele para colum, os dois invertem seus valores */
+    line-height: 50px;
+    color: var(--font);
+}
+
+nav{
+    display: flex;
+    background-color: var(--bgMenu);
+    flex-direction: row; /* Row faz ele ficar numa linha, e o Collum vai virar uma coluna tendeu fi, tem os dois jeitos */
+}
+nav a{
+    text-decoration: none;
+    color: var(--font);
+    padding: 16px;
+    min-width: 120px;
+    text-align: center;
+    border: 1px solid gold;
+    flex: 1;
+}
+nav a:hover{
+    background-color: var(--btnhover);
+}
+.row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.col25{
+    width: 25%;
+}
+.col75{
+    width: 75%;
+}
+input[type='text'], input[type='email'], textarea{
+    border-radius: 4px;
+    border: 1px solid var(--bgMenu);
+    width: 100%;
+    padding: 12px;
+}
+textarea{
+    height: 200%;
+}
+#teste {
+    display: flex;
+    border: 1px solid gold;
+    justify-content: space-evenly;
+}
+#teste div {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+@media(max-width: 800px){
+    label[for="btmenu"] {
+        display: flex;
+    }
+    nav {
+        display: none;
+    }
+    nav {
+        flex-direction: column;
+    }
+.active{
+    display: flex;
+}
+.row{
+    flex-direction: column;
+}
+.col25, .col75{
+    width: 100%;
+}    
+}
+
