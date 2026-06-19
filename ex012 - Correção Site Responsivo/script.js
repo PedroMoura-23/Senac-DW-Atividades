@@ -4,6 +4,6 @@ function menu(){
     
 }
 function cor(){
-    let html = document.documentElement;
-    nav.classList.toggle('escuro');
+    let fundo = document.documentElement;
+    fundo.classList.toggle('escuro');
 }

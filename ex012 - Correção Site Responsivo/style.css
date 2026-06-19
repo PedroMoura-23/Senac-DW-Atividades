@@ -1,10 +1,10 @@
 *{
     box-sizing: border-box;
 }
-:root.black {
+:root.escuro {
     --bgNav: #dbdada;
-    --fonte: rgb(0, 0, 0);
-    --bgSite: #0f0f0f;
+    --fonte: rgb(110, 110, 110);
+    --bgSite: #292929;
     --bghover: #5a5a5a;
 }
 :root{
@@ -18,6 +18,31 @@
 }
 #lua:hover{
     background-color: var(--bghover);
+}
+#troca{
+    width: 64px;
+    height: 24px;
+    border: 1px solid black;
+    background-color: var(--bghover);
+    border-radius: 50px;
+    margin: 24px auto;
+    position: absolute;
+    right: 3%;
+    top: 1%
+}
+#troca button {
+    position: absolute;
+    
+    width: 32px;
+    height: 32px;
+    left: -5%;
+    top: 50%;
+    border: 0;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+#troca button:hover {
+    outline: 2px solid var(--bghover);
 }
 
 body{
@@ -46,7 +71,9 @@ nav{
     flex-direction: row;
     margin-bottom: 20px;
 }
-
+.escuro #troca button{
+    left: 50%;
+}
 nav a{
     text-decoration: none;
     color: var(--fonte);

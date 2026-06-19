@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+:root.escuro {
+    background-image: url(assets/images/violet-blurred-background_1035-3289.avif);
+    background-size: 100%;
+    --bgNav: #dbdada;
+    --fonte: rgb(255, 255, 255);
+    --bgSite: #292929;
+    --bghover: #5a5a5a;
+}
+:root{
+    background-image: url(assets/images/gradient-minimalist-background_23-2149989166.avif);
+    background-size: 100%;
+    --bgNav: #333;
+    --fonte: rgb(3, 3, 3);
+    --bgSite: #f1f1f1;
+    --bghover: #aaa;
+}
+#troca{
+    width: 64px;
+    height: 24px;
+    border: 1px solid black;
+    background-color: var(--bghover);
+    border-radius: 50px;
+    margin: 24px auto;
+    position: absolute;
+    right: 3%;
+    top: 1%
+}
+#troca button {
+    position: absolute;
+    
+    width: 32px;
+    height: 32px;
+    left: -5%;
+    top: 50%;
+    border: 0;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+#troca button:hover {
+    outline: 2px solid var(--bghover);
+}
+.escuro #troca button{
+    left: 50%;
+}
+body{
+    
+}
+section{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.icones{
+    margin: 10px;
+    width: 50px;
+}
+footer{
+    color: var(--fonte);
+    text-align: center;
+    position: relative;
+    
+}
